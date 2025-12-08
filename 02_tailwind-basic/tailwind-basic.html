@@ -5,7 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <h1 class="text-3xl m-14 bg-red-600 font-bold underline">Hello world!</h1>
-  </body>
+  <body class="bg-purple-500 min-h-screen"></body>
+
+  <div class="flex justify-center items-center min-h-screen p-6">
+    <div class="bg-white w-full max-w-[400px] rounded-lg shadow-md p-6 m-4">
+      <!-- avartar -->
+      <div class="flex items-center gap-4 m-2">
+        <div class="bg-purple-500 rounded-full w-[60px] h-[60px]"></div>
+        <div>
+          <h2 class="text-xl font-bold">Jane smith</h2>
+          <p class="text-sm text-gray-500">Developer</p>
+        </div>
+      </div>
+      <!-- info -->
+      <div class="bg-blue-500 rounded-lg p-4 m-2">
+        <p class="text-white text-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <!-- button -->
+      <div>
+        <button
+          class="bg-purple-500 text-white py-3 px-6 rounded-lg font-semibold cursor-pointer hover:bg-black hover:scale-105"
+        >
+          Follow
+        </button>
+        <button
+          class="bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold cursor-pointer hover:bg-black hover:scale-105"
+        >
+          Message
+        </button>
+      </div>
+    </div>
+  </div>
 </html>
