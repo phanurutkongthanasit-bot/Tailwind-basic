@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="../public/images/icon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #3b82f6;
+        --font-size-2xl: 1.5rem;
+      }
+      @layer base {
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        a {
+          color: brown;
+        }
+        h1 {
+          font-size: var(--font-size-2xl);
+        }
+      }
+      @layer components {
+        .btn {
+          @apply px-4 py-2 font-bold transition-all bg-primary rounded-lg
+            /* padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            transition: all 200ms;
+            background-color: var(--color-primary); */;
+        }
+        .btn:hover {
+          background-color: blue;
+        }
+      }
+      @layer utilities {
+        .center-flex {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex justify-center items-center">
+    <section>
+      <h2>ตัวอย่างการใช้งาน</h2>
+      <a href="#">This is a link</a>
+      <a href="#">This is a link</a>
+      <button class=""></button>
+      <h1>Heading 1</h1>
+    </section>
+  </body>
+</html>
